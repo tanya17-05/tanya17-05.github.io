@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* reseting css start */
+:root {
+  --purple: #715bfe;
+  --dark-purple: #3b2532;
+  --pink: #f375f3;
+  --cream: #f1c853;
+  --black: #26252c;
+  --white: #fdfdfd;
+  --grey: #81818138;
+  --orange: #f1805e;
+  --blue: #0b72fa;
+  --yellow: #fdd500;
+  --sky: #18efd5;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: var(--purple);
+}
+
+::selection {
+  background: var(--purple);
+}
+
+body {
+  position: absolute;
+  top: 0;
+  z-index: -1000;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--black);
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* reseting css end */
+
+/* nav css start */
+
+.logo {
+  cursor: pointer;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  background: var(--black);
+  height: 26px;
+  position: fixed;
+  top: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+  width: 50vw;
+  
+}
+
+.nav-link a {
+  color: var(--white);
+  margin: 5px 20px;
+  padding: 0 2px;
+  background-color: transparent;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid var(--white);
+  transition: all 0.2s ease;
+}
+
+.nav-link a:hover {
+  color: var(--purple);
+  border-bottom: 1px solid var(--purple);
+
+}
+/* nav css end */
+
+/* bolt css start */
+.bolt {
+  border: 4px solid rgba(0, 0, 0, 0);
+  border-bottom: 22px solid var(--purple);
+  transform: rotateZ(-2000deg);
+  padding: 2px;
+  width: 0;
+  height: 0;
+  margin: 0;
+  overflow: visible;
+  border-top: 0 solid;
+  border-radius: 0;
+  transform-origin: 50% 50% 0;
+}
+
+.bolt:after {
+  content: "";
+  top: -9px;
+  left: -8px;
+  border: 5px solid rgba(0, 0, 0, 0);
+  border-bottom: 25px solid var(--purple);
+  transform: rotateZ(4deg);
+  padding: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  margin: 0;
+  overflow: visible;
+  border-top: 0 solid;
+  border-radius: 0;
+  transform-origin: 50% 50% 0;
+}
+/* bolt css end */
+
+/* orbit css start */
+.orbit1 {
+  z-index: -10;
+  position: absolute;
+  height: 40rem;
+  width: 40rem;
+  top: -10rem;
+  right: -12rem;
+  border: solid 1px var(--grey);
+  border-radius: 50%;
+}
+.orbit2 {
+  z-index: -11;
+  position: absolute;
+  height: 50rem;
+  width: 50rem;
+  top: -10rem;
+  right: -12rem;
+  border: solid 1px var(--grey);
+  border-radius: 50%;
+}
+.orbit3 {
+  z-index: -12;
+  position: absolute;
+  height: 60rem;
+  width: 60rem;
+  top: -10rem;
+  right: -12rem;
+  border: solid 1px var(--grey);
+  border-radius: 50%;
+}
+/* orbit css end */
+
+/* planet css start */
+.sun {
+  z-index: -9;
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  top: -7rem;
+  right: -8rem;
+  background-color: var(--orange);
+  border-radius: 50%;
+}
+
+.planet1 {
+  z-index: -9;
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  top: 21rem;
+  right: 38.8rem;
+  background-color: var(--pink);
+  border-radius: 50%;
+}
+.planet2 {
+  z-index: -6;
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  top: 46rem;
+  right: 31.3rem;
+  background-color: var(--yellow);
+  border-radius: 50%;
+}
+.planet3 {
+  z-index: -6;
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  top: 34rem;
+  right: 57.7rem;
+  background-color: var(--sky);
+  border-radius: 50%;
+}
+/* planet css end */
+
+.page {
+  height: 100vh;
+}
+
+/* home css start */
+
+#home {
+  color: var(--white);
+  /* margin-top: 16em; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* transform: translateY(-50px); */
+}
+
+.row1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* intro start */
+
+.intro-image {
+  height: 10rem;
+  width: 15rem;
+  background-size: cover;
+  object-fit: cover;
+  background: var(--white);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 7rem;
+  transform: rotate(-5deg);
+}
+
+.intro-1 {
+  margin-top: -12px;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 10px;
+}
+.intro-2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.intro-3 {
+  font-size: 30px;
+}
+.intro-4 {
+  font-size: 40px;
+  font-family: cursive;
+  font-weight: 900;
+}
+
+.talk {
+  font-size: 20px;
+}
+
+#talk-link {
+  color: #f32424;
+  text-decoration: none;
+  opacity: 0;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+/* intro end */
+
+/* home css end */
+
+/* skills css start */
+
+#about {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+#about > .written {
+  flex: 2;
+  padding: 7rem;
+}
+
+#about .picture {
+  flex: 1;
+  height: 20rem;
+}
+#about img {
+  height: inherit;
+}
+
+.links {
+  margin-top: 10px;
+}
+
+.links a {
+  color: var(--white);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  border-bottom: 1px solid var(--white);
+  margin: 0 5px;
+}
+
+.links a:hover {
+  color: var(--purple);
+  border-bottom: 1px solid var(--purple);
+}
+
+/* about css end */
+
+/* skills css start */
+
+#skills {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+#skills > .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills .title p {
+  width: 22rem;
+  text-align: center;
+}
+
+#skills > .written {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#skills .title {
+  flex: 1;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+#skills img {
+  height: inherit;
+}
+
+.skill-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.skill-list > li {
+  padding: 20px;
+  text-align: center;
+}
+/* skills css end */
+
+/* projects css start */
+
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#projects .wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+  border: var(--orange);
+  border-radius: 12px;
+  height: auto;
+  margin: 15px;
+  flex-direction: column;
+}
+
+.card-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-video {
+  width: inherit;
+  max-width: 20rem;
+}
+
+.card-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.card-right a {
+  color: var(--white);
+}
+
+.card-right-up {
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-right-down {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.card-right-down span {
+  margin-right: 5px;
+}
+
+/* projects css end */
+
+/* contact css start */
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-img {
+  height: 10rem;
+}
+
+.contact-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+form input {
+  color: var(--purple);
+  background: none;
+  border: none;
+  margin: 10px 0;
+  padding: 5px;
+  width: 12rem;
+  border-bottom: 1px solid var(--purple);
+  height: 2rem;
+}
+form textarea {
+  color: var(--purple);
+  background: none;
+  border: none;
+  margin: 10px 0;
+  padding: 5px;
+  width: 12rem;
+  height: 5rem;
+  border-bottom: 1px solid var(--purple);
+}
+form button {
+  cursor: pointer;
+  background: none;
+  border: 1px solid var(--purple);
+  margin: 10px 0;
+  padding: 5px;
+  width: 12rem;
+  height: 5rem;
+  transition: all 0.5s ease;
+}
+form input,
+form textarea:focus {
+  outline: none;
+}
+
+.val-error {
+  display: none;
+  color: #f32424;
+  font-size: 12px;
+  width: 12rem;
+  text-align: left;
+}
+
+.visible {
+  display: block !important;
+}
+
+#message-status {
+  height: 50px;
+    width: 15rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+form button:hover {
+  background-color: var(--purple);
+}
+/* contact css end */
+
+/* media queries start */
+@media only screen and (max-width: 964px) {
+  .night-sky {
+    display: none;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .picture {
+    display: none;
+  }
+  #about .written {
+    padding: 12px;
+  }
+  #skills {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 707px) {
+  nav {
+    display: none;
+  }
+  #contact .left {
+    display: none;
+  }
+  .card-video {
+    max-width: 10rem;
+  }
+  #projects .wrapper {
+    flex-direction: column;
+  }
+}
+/* media queries end */
