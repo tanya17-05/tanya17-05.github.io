@@ -32,14 +32,18 @@
   background: var(--purple);
 }
 
+body, html {
+  overflow-x: hidden !important;
+}
+
 body {
   position: absolute;
+  width: 100% !important;
   top: 0;
   z-index: -1000;
   height: 100vh;
   width: 100vw;
   background-color: var(--black);
-  overflow-x: hidden;
 }
 
 * {
