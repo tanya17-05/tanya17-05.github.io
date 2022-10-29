@@ -34,6 +34,7 @@
 
 body, html {
   overflow-x: hidden !important;
+  scroll-behavior: smooth !important;
 }
 
 body {
