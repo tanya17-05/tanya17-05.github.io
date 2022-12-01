@@ -17,14 +17,14 @@ var intervalID = 0;
 
 
 function fadeIn() {
-  setInterval(show, 20);
+  setInterval(show, 30);
 }
 
 function show() {
   var fadeLink = document.querySelector("#talk-link");
   opacity = Number(window.getComputedStyle(fadeLink).getPropertyValue("opacity"));
   if (opacity < 1) {
-    opacity = opacity + 0.1;
+    opacity = opacity + 0.2;
     fadeLink.style.opacity = opacity;
   } else {
     clearInterval(intervalID);
